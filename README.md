@@ -1,6 +1,6 @@
 # Account Service
 
-Service structure of project:
+Structure of project:
 
 Authentication
 
