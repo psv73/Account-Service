@@ -49,11 +49,11 @@ http://localhost:28852/api
 
 📌 API Endpoints (Example)
 Method	    Endpoint	        Description
-GET	    /accounts	      Get all accounts
-GET	    /accounts/{id}    Get account by ID
-POST	    /accounts         Create a new account
-PUT	    /accounts/{id}    Update an account
-DELETE	    /accounts/{id}    Delete an account
+GET        /accounts         Get all accounts
+GET        /accounts/{id}    Get account by ID
+POST       /accounts         Create a new account
+PUT        /accounts/{id}    Update an account
+DELETE     /accounts/{id}    Delete an account
 
 🧪 Testing
 
