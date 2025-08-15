@@ -26,10 +26,10 @@ It provides a REST API for creating, updating, retrieving, and deleting accounts
 - **Gradle**
 
 ## 📂 Project Structure
-src/
-├── main/
-│ ├── java/ # Application source code
-│ └── resources/ # Configuration files and resources
+src/    
+├── main/   
+│ ├── java/ # Application source code   
+│ └── resources/ # Configuration files and resources    
 └── test/ # Unit and integration tests
 
 
