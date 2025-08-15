@@ -32,7 +32,6 @@ src/
 │ └── resources/ # Configuration files and resources    
 └── test/ # Unit and integration tests
 
-
 ## ⚙️ Build & Run
 Run the service using Gradle:
 ```bash
@@ -46,20 +45,27 @@ Build the JAR file:
 
 After starting, the API will be available at:
 
-http://localhost:8080
+http://localhost:28852/api
 
 📌 API Endpoints (Example)
-Method	Endpoint	Description
-GET	/accounts	Get all accounts
-GET	/accounts/{id}	Get account by ID
-POST	/accounts	Create a new account
-PUT	/accounts/{id}	Update an account
-DELETE	/accounts/{id}	Delete an account
+Method	    Endpoint	        Description
+GET	    /accounts	      Get all accounts
+GET	    /accounts/{id}    Get account by ID
+POST	    /accounts         Create a new account
+PUT	    /accounts/{id}    Update an account
+DELETE	    /accounts/{id}    Delete an account
+
 🧪 Testing
 
 Run tests:
 
-./gradlew test
+./gradlew test 
+``` 
+## 👨‍💻 About Me
 
+Hi! My name is Sergii Ponomarenko — I am a Junior Java Developer based in Slovakia.
+I am passionate about backend development, clean code, and learning modern technologies.
+Currently, I am looking for part-time or full-time opportunities to grow as a Java developer.
 
-💡 This project can be extended to run in Docker, integrated with CI/CD pipelines, or connected to an external database (PostgreSQL, MySQL) for production environments.
+📫 LinkedIn: https://www.linkedin.com/in/sergii-ponomarenko-064529114/
+💻 GitHub: https://github.com/psv73
