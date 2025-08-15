@@ -1,0 +1,24 @@
+ext {
+    springBootVersion='4.0.0-M1'
+}
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
+    implementation("org.springframework.boot:spring-boot-starter-actuator:$springBootVersion")
+    implementation("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
+    implementation("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
+    implementation("org.springframework.boot:spring-boot-starter-security:$springBootVersion")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:$springBootVersion")
+    implementation("org.modelmapper:modelmapper:3.2.0")
+    implementation("com.google.guava:guava:33.2.0-jre")
+    implementation("com.h2database:h2:2.3.232")
+    implementation("jakarta.validation:jakarta.validation-api:3.1.1")
+    runtimeOnly 'com.h2database:h2'
+    implementation group: 'org.hibernate', name: 'hibernate-validator', version: '6.1.0.Final'
+}
