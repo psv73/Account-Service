@@ -67,5 +67,5 @@ Hi! My name is Sergii Ponomarenko — I am a Junior Java Developer based in Slov
 I am passionate about backend development, clean code, and learning modern technologies.
 Currently, I am looking for part-time or full-time opportunities to grow as a Java developer.
 
-📫 LinkedIn: https://www.linkedin.com/in/sergii-ponomarenko-064529114/
+📫 LinkedIn: https://www.linkedin.com/in/sergii-ponomarenko-064529114/   
 💻 GitHub: https://github.com/psv73
