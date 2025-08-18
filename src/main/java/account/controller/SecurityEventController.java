@@ -14,7 +14,7 @@ public class SecurityEventController {
         this.securityEventService = securityEventService;
     }
 
-    @GetMapping("/api/security/events/")
+    @GetMapping("/api/security/events")
     public ResponseEntity<?> securityEvents() {
         return securityEventService.getAllEvents();
     }

@@ -23,7 +23,7 @@ public class PaymentController {
 
     @GetMapping("/api/empl/payment")
     public ResponseEntity<?> getPeriodPayment(Authentication auth,
-                                              @RequestParam(required = false) String period) {
+                                              @RequestParam(required = false, name="period") String period) {
 
         return paymentService.getPayments(accountRepository
                         .findByEmailIgnoreCase(auth.getName())
