@@ -70,12 +70,7 @@ http://localhost:28852/api
 Run tests:
 ```
 ./gradlew test 
-```
-## 🌟 Highlights
-- Follows clean architecture & DTO pattern    
-- Demonstrates secure authentication & authorization  
-- Shows ability to work with databases, validation, and REST APIs 
-- Production-ready practices: logging, monitoring, role management    
+``` 
 
 ## 👨‍💻 About Me
 
