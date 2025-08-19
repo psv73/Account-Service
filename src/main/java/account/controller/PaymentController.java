@@ -1,5 +1,6 @@
 package account.controller;
 
+import account.constant.AppPath;
 import account.model.Payment;
 import account.repository.AccountRepository;
 import account.service.PaymentService;
@@ -21,7 +22,7 @@ public class PaymentController {
         this.accountRepository = accountRepository;
     }
 
-    @GetMapping("/api/empl/payment")
+    @GetMapping(AppPath.PAYMENT)
     public ResponseEntity<?> getPeriodPayment(Authentication auth,
                                               @RequestParam(required = false, name="period") String period) {
 
@@ -31,12 +32,12 @@ public class PaymentController {
                 period);
     }
 
-    @PostMapping("/api/acct/payments")
+    @PostMapping(AppPath.PAYMENTS)
     public ResponseEntity<?> uploadPayrolls(@RequestBody List<Payment> payments) {
         return paymentService.uploadPayrolls(payments);
     }
 
-    @PutMapping("/api/acct/payments")
+    @PutMapping(AppPath.PAYMENTS)
     public ResponseEntity<?> changeSalary(@RequestBody Payment payment) {
         return paymentService.changeSalary(payment);
     }

@@ -15,7 +15,7 @@ It provides a REST API for creating, updating, retrieving, and deleting accounts
 
 ## 🛠 Technologies Used
 - **Java 17+**
-- **Spring Boot 4.0.0-M1**
+- **Spring Boot 3.5.4**
 - **Spring Web, Security, Data JPA**
 - **Hibernate Validator**
 - **Spring Boot Actuator**
@@ -59,7 +59,8 @@ http://localhost:28852/api
 | GET    | /empl/payment       | gives access to the employee's payrolls       |
 | POST   | /acct/payments      | uploads payrolls                              |   
 | PUT    | /acct/payments      | updates payment information                   |   
-| PUT    | /admin/account/role | changes account roles                         |
+| GET    | /security/events    | display all security evens                    |   
+| PUT    | /admin/user/role    | changes account roles                         |
 | DELETE | /admin/user/{email} | deletes a account                             |   
 | GET    | /admin/user         | displays information about all users          |   
 | PUT    | /admin/user/access  | lock/unlock the user                          |
@@ -71,6 +72,13 @@ Run tests:
 ```
 ./gradlew test 
 ``` 
+## 🌟 Highlights
+- Clean RESTful API architecture for account management
+- Implemented layered architecture with service and repository patterns
+- Input validation and exception handling for robust application flow
+- JWT-based authentication and authorization (Spring Security)
+- Gradle build with ready-to-use configuration for easy project setup
+- Example API usage with curl provided
 
 ## 👨‍💻 About Me
 

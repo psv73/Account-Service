@@ -1,4 +1,4 @@
-package account.model.enums;
+package account.constant;
 
 public enum ErrorMessageEnum {
     USER_EXIST("User exist!"),

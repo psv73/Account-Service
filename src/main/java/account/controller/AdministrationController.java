@@ -1,5 +1,6 @@
 package account.controller;
 
+import account.constant.AppPath;
 import account.request.ChangeRoleRequest;
 import account.request.UserAccessRequest;
 import account.service.AdministrationService;
@@ -17,23 +18,23 @@ public class AdministrationController {
         this.administrationService = administrationService;
     }
 
-    @GetMapping("/api/admin/user")
+    @GetMapping(AppPath.USER)
     public ResponseEntity<?> getUsers() {
         return administrationService.getAllUsers();
     }
 
-    @DeleteMapping("/api/admin/user/{email}")
+    @DeleteMapping(AppPath.USER + "/{email}")
     public ResponseEntity<?> deleteUser(Authentication auth, @PathVariable String email) {
         return administrationService.deleteUser(email, auth.getName());
     }
 
-    @PutMapping("/api/admin/user/role")
+    @PutMapping(AppPath.USER_ROLE)
     public ResponseEntity<?> roleOperation(Authentication auth,
                                            @RequestBody @NotNull ChangeRoleRequest changeRoleRequest) {
         return administrationService.changeUserRole(auth.getName(), changeRoleRequest);
     }
 
-    @PutMapping("/api/admin/user/access")
+    @PutMapping(AppPath.USER_ACCESS)
     public ResponseEntity<?> access(Authentication auth,
                                     @RequestBody @NotNull UserAccessRequest userAccessRequest) {
         return administrationService.changeUserAccess(userAccessRequest, auth);

@@ -1,7 +1,7 @@
 package account.component;
 
 import account.model.Account;
-import account.model.enums.EventEnum;
+import account.constant.EventEnum;
 import account.repository.AccountRepository;
 import account.service.AccountService;
 import account.service.SecurityEventService;

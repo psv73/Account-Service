@@ -1,4 +1,4 @@
-package account.model.enums;
+package account.constant;
 
 public enum RoleEnum {
     ROLE_ADMINISTRATOR("ADMINISTRATOR"),

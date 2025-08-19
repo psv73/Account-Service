@@ -1,7 +1,7 @@
 package account.utils;
 
 import account.model.Role;
-import account.model.enums.RoleEnum;
+import account.constant.RoleEnum;
 import account.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

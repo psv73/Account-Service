@@ -1,7 +1,7 @@
 package account.service;
 
 import account.model.SecurityEvent;
-import account.model.enums.EventEnum;
+import account.constant.EventEnum;
 import account.repository.SecurityEventRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.transaction.Transactional;

@@ -1,5 +1,6 @@
 package account.controller;
 
+import account.constant.AppPath;
 import account.service.SecurityEventService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +15,7 @@ public class SecurityEventController {
         this.securityEventService = securityEventService;
     }
 
-    @GetMapping("/api/security/events")
+    @GetMapping(AppPath.SECURITY_EVENT)
     public ResponseEntity<?> securityEvents() {
         return securityEventService.getAllEvents();
     }

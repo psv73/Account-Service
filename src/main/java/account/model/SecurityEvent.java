@@ -1,7 +1,6 @@
 package account.model;
 
-import account.model.enums.EventEnum;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import account.constant.EventEnum;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;

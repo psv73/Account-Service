@@ -1,4 +1,4 @@
-package account.model.enums;
+package account.constant;
 
 public enum EventEnum {
     CREATE_USER("A user has been successfully registered"),

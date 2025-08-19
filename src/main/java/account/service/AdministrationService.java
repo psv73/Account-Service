@@ -1,10 +1,10 @@
 package account.service;
 
 import account.model.Account;
-import account.model.enums.ErrorMessageEnum;
-import account.model.enums.EventEnum;
+import account.constant.ErrorMessageEnum;
+import account.constant.EventEnum;
 import account.model.enums.OperationEnum;
-import account.model.enums.RoleEnum;
+import account.constant.RoleEnum;
 import account.repository.AccountRepository;
 import account.repository.RoleRepository;
 import account.request.ChangeRoleRequest;

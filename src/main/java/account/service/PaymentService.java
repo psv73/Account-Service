@@ -2,7 +2,7 @@ package account.service;
 
 import account.dto.AccountDTO;
 import account.model.Account;
-import account.model.enums.ErrorMessageEnum;
+import account.constant.ErrorMessageEnum;
 import account.model.Payment;
 import account.repository.AccountRepository;
 import account.repository.PaymentRepository;

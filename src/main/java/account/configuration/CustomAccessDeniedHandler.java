@@ -1,6 +1,6 @@
 package account.configuration;
 
-import account.model.enums.EventEnum;
+import account.constant.EventEnum;
 import account.service.SecurityEventService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

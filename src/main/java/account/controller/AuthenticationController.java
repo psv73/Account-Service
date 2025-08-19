@@ -1,5 +1,6 @@
 package account.controller;
 
+import account.constant.AppPath;
 import account.model.Account;
 import account.repository.AccountRepository;
 import account.request.NewPasswordRequest;
@@ -24,12 +25,12 @@ public class AuthenticationController {
         this.accountRepository = accountRepository;
     }
 
-    @PostMapping("/api/auth/signup")
+    @PostMapping(AppPath.SIGN_UP)
     public ResponseEntity<?> singUp(@Valid @RequestBody Account account, BindingResult result) {
         return accountService.signUp(account, result);
     }
 
-    @PostMapping("/api/auth/changepass")
+    @PostMapping(AppPath.CHANGE_PASS)
     public ResponseEntity<?> changepass(Authentication auth,
                                         @Valid @RequestBody NewPasswordRequest newPasswordRequest,
                                         BindingResult result) {
